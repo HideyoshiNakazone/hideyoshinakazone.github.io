@@ -1,0 +1,17 @@
+h1{
+    color:darkcyan;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    width: 650px;
+    text-shadow: 1px 1px 0px black;
+    font-family: 'Orbitron', sans-serif;
+}
+
+p{
+    text-indent: 50px;
+    width: 650px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
