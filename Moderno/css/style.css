@@ -103,6 +103,47 @@ nav {
 .menu.open .burger::after {
     transform: rotate(-45deg) /*translate(35px, 35px)*/;
 }
+@media screen and (min-width:1024px) {
+    .nav-links {
+        all: initial;
+        all: unset;
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+}
+@media screen and (min-width:768px) {
+    .nav-links {
+        all: initial;
+        all: unset;
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+    body {
+        all: initial;
+        all: unset;
+    }
+    .nav-links li {
+        all: initial;
+        all: unset;
+        list-style: none;
+    }
+    .menu {
+        all: initial;
+        all: unset;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        float: right;
+        display: none;
+    }
+}
+
 @keyframes navLinkFade {
     from{
         opacity: 0;
