@@ -5,7 +5,7 @@
     font-family: 'Lora', serif;
 }
 body {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
@@ -22,10 +22,11 @@ nav {
     position: absolute;
     right: 0px;
     height: 92vh;
-    top: 8vh;
+    top: 9vh;
     background-color: #2e2e2e;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     width: 50%;
     transform: translateX(100%);
@@ -104,16 +105,7 @@ nav {
 .menu.open .burger::after {
     transform: rotate(-45deg) /*translate(35px, 35px)*/;
 }
-@media screen only and (min-width:1024px) {
-    .nav-links {
-        all: initial;
-        all: unset;
-        display: flex;
-        justify-content: space-around;
-        width: 40%;
-    }
-}
-@media screen only and (min-width:768px) {
+@media (min-width: 768px) {
     .nav-links {
         all: initial;
         all: unset;
@@ -144,7 +136,15 @@ nav {
         display: none;
     }
 }
-
+@media (min-width:1024px) {
+    .nav-links {
+        all: initial;
+        all: unset;
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+}
 @keyframes navLinkFade {
     from{
         opacity: 0;
