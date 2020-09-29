@@ -29,6 +29,7 @@ nav {
     align-items: center;
     width: 50%;
     transform: translateX(100%);
+    transition: none;
 }
 .nav-active {
     transform: translateX(0%);
@@ -103,7 +104,7 @@ nav {
 .menu.open .burger::after {
     transform: rotate(-45deg) /*translate(35px, 35px)*/;
 }
-@media screen and (min-width:1024px) {
+@media screen only and (min-width:1024px) {
     .nav-links {
         all: initial;
         all: unset;
@@ -112,7 +113,7 @@ nav {
         width: 40%;
     }
 }
-@media screen and (min-width:768px) {
+@media screen only and (min-width:768px) {
     .nav-links {
         all: initial;
         all: unset;
