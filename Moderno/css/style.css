@@ -4,12 +4,12 @@
     box-sizing: border-box;
     font-family: 'Lora', serif;
 }
-body {
-    overflow: hidden;
-}
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
 }
+html, body {
+    overflow-x:hidden 
+} 
 nav {
     display: flex;
     justify-content: space-around;
@@ -142,7 +142,29 @@ nav {
         all: unset;
         display: flex;
         justify-content: space-around;
-        width: 40%;
+        width: 50%;
+    }
+    body {
+        all: initial;
+        all: unset;
+    }
+    .nav-links li {
+        all: initial;
+        all: unset;
+        list-style: none;
+    }
+    .menu {
+        all: initial;
+        all: unset;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        float: right;
+        display: none;
     }
 }
 @keyframes navLinkFade {
