@@ -7,7 +7,9 @@
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
 }
-html, body {
+.header {
+    height: 100vh;
+    position: relative;
     overflow-x:hidden 
 } 
 nav {
@@ -35,11 +37,11 @@ nav {
 .nav-active {
     transform: translateX(0%);
     transition: transform 0.5s ease-in;
+    overflow: hidden;
 }
 .nav-deactive {
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
-
 }
 .nav-links li {
     list-style: none;
