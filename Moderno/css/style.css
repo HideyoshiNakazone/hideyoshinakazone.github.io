@@ -196,8 +196,12 @@ nav {
     justify-content: space-around;
 }
 .presentation p{
-    color: #8f8f94;
+    color: #9c9ca1;
     text-align: center;
+}
+.intro {
+    width: 80%;
+    margin: 0 auto;
 }
 .btm {
     padding-top: 50px;
@@ -218,6 +222,6 @@ nav {
 }
 .presentation button a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
     font-size: 16px;
 }
