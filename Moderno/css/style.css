@@ -7,18 +7,21 @@
 h1, h2, h3, h4 {
     font-family: 'Montserrat', sans-serif;
 }
-.header {
+.wrapper {
     height: 100vh;
     position: relative;
-    overflow-x:hidden 
+    overflow-x:hidden;
 } 
 nav {
     display: flex;
+    position: fixed;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
+    width: 100%;
     background-color: #2e2e2e;
     font-family: 'Montserrat', sans-serif;
+    z-index: 3;
 }
 .nav-links {
     position: absolute;
@@ -33,6 +36,7 @@ nav {
     width: 50%;
     transform: translateX(100%);
     transition: none;
+    z-index: 1;
 }
 .nav-active {
     transform: translateX(0%);
@@ -178,4 +182,42 @@ nav {
         opacity: 1;
         transform: translateX(0px);
     }
+}
+
+.presentation {
+    background-color: #2e2e2e;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.presentation h1{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.presentation p{
+    color: #8f8f94;
+    text-align: center;
+}
+.btm {
+    padding-top: 50px;
+    position: relative;
+}
+.presentation button {
+    border: none;
+    padding: 15px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #f44336;
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 0;
+}
+.presentation button a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
 }
