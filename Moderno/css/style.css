@@ -101,15 +101,14 @@ nav {
 }
 /* ANIMATION */
 .menu.open .burger {
-    /* transform: translateX(-50px); */
     background: transparent;
     box-shadow: none;
 }
 .menu.open .burger::before {
-    transform: rotate(45deg) /*translate(35px, -35px)*/;
+    transform: rotate(45deg);
 }
 .menu.open .burger::after {
-    transform: rotate(-45deg) /*translate(35px, 35px)*/;
+    transform: rotate(-45deg);
 }
 @media (min-width: 768px) {
     .nav-links {
@@ -200,7 +199,7 @@ nav {
     text-align: center;
 }
 .intro {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 .btm {
