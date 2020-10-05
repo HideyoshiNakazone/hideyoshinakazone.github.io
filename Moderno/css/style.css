@@ -12,7 +12,10 @@ h1, h2, h3, h4 {
     position: relative;
     overflow-x:hidden;
 } 
-nav {
+.header {
+    background-color: #2e2e2e;
+}
+.principal {
     display: flex;
     position: fixed;
     justify-content: space-around;
@@ -36,7 +39,7 @@ nav {
     width: 50%;
     transform: translateX(100%);
     transition: none;
-    z-index: 1;
+    z-index: 3;
 }
 .nav-active {
     transform: translateX(0%);
@@ -110,68 +113,6 @@ nav {
 .menu.open .burger::after {
     transform: rotate(-45deg);
 }
-@media (min-width: 768px) {
-    .nav-links {
-        all: initial;
-        all: unset;
-        display: flex;
-        justify-content: space-around;
-        width: 40%;
-    }
-    body {
-        all: initial;
-        all: unset;
-    }
-    .nav-links li {
-        all: initial;
-        all: unset;
-        list-style: none;
-    }
-    .menu {
-        all: initial;
-        all: unset;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        width: 80px;
-        height: 80px;
-        cursor: pointer;
-        transition: all .5s ease-in-out;
-        float: right;
-        display: none;
-    }
-}
-@media (min-width:1024px) {
-    .nav-links {
-        all: initial;
-        all: unset;
-        display: flex;
-        justify-content: space-around;
-        width: 50%;
-    }
-    body {
-        all: initial;
-        all: unset;
-    }
-    .nav-links li {
-        all: initial;
-        all: unset;
-        list-style: none;
-    }
-    .menu {
-        all: initial;
-        all: unset;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        width: 80px;
-        height: 80px;
-        cursor: pointer;
-        transition: all .5s ease-in-out;
-        float: right;
-        display: none;
-    }
-}
 @keyframes navLinkFade {
     from{
         opacity: 0;
@@ -182,6 +123,7 @@ nav {
         transform: translateX(0px);
     }
 }
+
 
 .presentation {
     background-color: #2e2e2e;
@@ -223,4 +165,53 @@ nav {
     text-decoration: none;
     color: #ffffff;
     font-size: 16px;
+}
+@media (min-width: 768px) {
+    .nav-links {
+        all: initial;
+        all: unset;
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+    .nav-links ul li {
+        display: inline-block;
+    }
+    .nav-links li {
+        all: initial;
+        all: unset;
+        list-style: none;
+    }
+    .menu {
+        all: initial;
+        all: unset;
+        display: none;
+    }
+    .intro {
+        all: initial;
+        all: unset;
+    }
+}
+@media (min-width:1024px) {
+    .nav-links {
+        all: initial;
+        all: unset;
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+    }    
+    .nav-links li {
+        all: initial;
+        all: unset;
+        list-style: none;
+    }
+    .menu {
+        all: initial;
+        all: unset;
+        display: none;
+    }
+    .intro {
+        all: initial;
+        all: unset;
+    }
 }
