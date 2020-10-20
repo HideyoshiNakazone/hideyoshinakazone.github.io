@@ -232,7 +232,7 @@ h1, h2, h3, h4 {
     .card-text {
         grid-area: text;
     }
-    .card-text h2 {
+    .card-text h3 {
         font-weight: secondary;
         text-transform: uppercase;
         color: #818181;
