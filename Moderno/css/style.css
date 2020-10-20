@@ -177,12 +177,9 @@ h1, h2, h3, h4 {
 .skill-card {
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: 150px 150px 150px;
-    grid-template-areas: "image" "text" "stats";
-    
+    grid-template-rows: 150px 200px;
+    grid-template-areas: "image" "text";
     background-color: #ffffff;
-    /* border-radius: 18px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, .9); */
     text-align: center;
 }
 
@@ -247,6 +244,8 @@ h1, h2, h3, h4 {
 }
 .card-text p {
     font-size: 15px;
+    text-align: justify;
+    justify-content: center;
     color: #9a9a9a;
     padding-left: 10px;
     padding-right: 10px;
