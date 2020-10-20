@@ -2,19 +2,22 @@
 <html>
     <head>
         <title>Hideyoshi - Creative Simple Portfolio Page</title>
-        <link rel="icon" href="img/logohideyoshi-red.png">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="icon" href="img/logohideyoshi-red.png" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
         <link rel="stylesheet" type="text/css" href="css/grid.css" />
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet" />
         <script src="https://kit.fontawesome.com/59950f6906.js" crossorigin="anonymous"></script>
-        <link rel="manifest" href="manifest.json">    
-        <meta name="msapplication-TileImage" content="img/logohideyoshi-red-144x144.png"> 
+        <link rel="manifest" href="manifest.json" /> 
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="apple-mobile-web-app-title" content="Hideyoshi" />
+        <link rel="shortcut icon" sizes="192x192" href="img/logohideyoshi-red-192x192.png">   
+        <meta name="msapplication-TileImage" content="img/logohideyoshi-red-192x192.png"> 
         <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="mobile-web-app-capable" content="yes">
-        <link rel="shortcut icon" sizes="192x192" href="img/logohideyoshi-red-144x144.png">
         <meta name="theme-color" content="#2e2e2e"> 
     </head>
     <body>
@@ -95,6 +98,15 @@
                 }).catch(function(err) {
                    console.log("No it didn't. This happened:", err)
                });
+            }
+        </script>
+        <script>
+            if (
+                (("standalone" in window.navigator) && !window.navigator.standalone)
+                ||
+                ( !window.matchMedia('(display-mode: standalone)').matches )
+            ) {
+                addToHomescreen();
             }
         </script>
     </body>
