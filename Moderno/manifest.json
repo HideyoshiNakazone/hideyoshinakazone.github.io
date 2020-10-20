@@ -4,6 +4,8 @@
     "theme_color": "#4A90E2",
     "background_color": "#F7F8F9",
     "display": "standalone",
+    "Scope": "/",
+    "start_url": "/",
     "icons": [
         {  
      "src": "img/logohideyoshi-red-36x36.png",
@@ -41,6 +43,5 @@
      "type": "image/png",
      "density": "4.0"
     }
-    ],
-    "start_url": "index.html"
+    ]
   }
