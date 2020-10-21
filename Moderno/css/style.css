@@ -130,7 +130,7 @@ h1, h2, h3, h4 {
 .presentation {
     background-image: linear-gradient( #2e2e2e, #292929);
     padding-top: 100px;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
 }
     .presentation h1{
         color: #ffffff;
@@ -180,6 +180,7 @@ h1, h2, h3, h4 {
         grid-template-areas: "image" "text";
         background-color: #ffffff;
         text-align: center;
+        padding-top: 40px;
     }
     .card-image{
         grid-area: image;
@@ -249,8 +250,7 @@ h1, h2, h3, h4 {
 
 .stories {
     background-color: #ffffff;
-    margin-top: 20px;
-    margin-top: 20px;
+    padding-top: 40px;
 }
     .stories h2 {
         font-weight: secondary;
