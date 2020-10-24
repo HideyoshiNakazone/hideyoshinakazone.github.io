@@ -1,11 +1,10 @@
 {
     "short_name": "Hideyoshi",
     "name": "Hideyoshi - Creative Simple Portfolio Page",
-    "theme_color": "#4A90E2",
-    "background_color": "#F7F8F9",
+    "theme_color": "#2e2e2e",
+    "background_color": "#2e2e2e",
     "display": "standalone",
-    "Scope": "/index.html",
-    "start_url": "/index.html",
+    "start_url": "./index.html",
     "icons": [
         {  
      "src": "img/logohideyoshi-red-36x36.png",
