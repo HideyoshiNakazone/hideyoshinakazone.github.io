@@ -4,8 +4,8 @@
     "theme_color": "#4A90E2",
     "background_color": "#F7F8F9",
     "display": "standalone",
-    "Scope": "/",
-    "start_url": "/",
+    "Scope": "/index.html",
+    "start_url": "/index.html",
     "icons": [
         {  
      "src": "img/logohideyoshi-red-36x36.png",
