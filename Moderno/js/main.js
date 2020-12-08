@@ -1,6 +1,6 @@
 const mnBtn = document.querySelector('.menu');
 const nav = document.querySelector('.nav-links');
-const navLinks = document.querySelectorAll('.nav-links li')
+const navLinks = document.querySelectorAll('.nav-links li, .nav-links button')
 let menuOpen = false;
 
 nav.classList.remove('nav-deactive')
@@ -27,29 +27,4 @@ mnBtn.addEventListener('click', () => {
             link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`
         }
     });
-});
-
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-        navigator.serviceWorker.register('js/sw.js').then(function(
-            registration) {
-                //Registration was successful
-                console.log('ServiceWorker resgistration succesful with scope: '
-                    , registration.scope);
-            }, function(err) {
-                // registration failed :(
-                console.log('ServiceWorker registration failed: ', err);
-            });
-    });
-}
-
-let deferredPrompt;
-
-window.addEventListener('beforeinstallprompt', (e) => {
-    // Prevent the mini-infobar from appearing on mobile
-    e.preventDefault();
-    // Stash the event so it can be triggered later.
-    deferredPrompt = e;
-    // Update UI notify the user they can install the PWA
-    showInstallPromotion();
 });

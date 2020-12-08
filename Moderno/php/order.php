@@ -1,4 +1,4 @@
 <?php
-header("Location: ../src/neworder.html");
+header("Location: ./neworder.html");
 exit;
 ?>
