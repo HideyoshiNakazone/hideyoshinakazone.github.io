@@ -171,7 +171,7 @@ button a {
 }
 
 
-@media screen and (min-width: 1024px){
+@media (min-width: 1024px){
 	.container{
         grid-template-columns: repeat(2, 1fr);
 		grid-gap: 5rem;
