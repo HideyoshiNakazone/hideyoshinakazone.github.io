@@ -1,6 +1,6 @@
 const mnBtn = document.querySelector('.menu');
 const nav = document.querySelector('.nav-links');
-const navLinks = document.querySelectorAll('.nav-links li')
+const navLinks = document.querySelectorAll('.nav-links li, .nav-links button')
 let menuOpen = false;
 
 nav.classList.remove('nav-deactive')
