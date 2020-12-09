@@ -209,3 +209,40 @@ button a {
 		justify-content: flex-start;
 	}
 }
+
+.user {
+	padding: 50px 20px;
+	background: #FFFFFF;
+	border-radius: 2px;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	width: 330px;
+	display: block;
+	margin: 0 auto;
+}
+
+#user-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+#user-name {
+  color: #0066AA;
+  font-weight: bold;
+}
+
+#user-email {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #0066AA;
+}
+
+.g-signin2,
+.g-signin2 .abcRioButton {
+  display: block;
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
