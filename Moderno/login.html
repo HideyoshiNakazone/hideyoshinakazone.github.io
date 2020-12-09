@@ -69,6 +69,17 @@
       <p id="user-email"></p>
     </div>
     <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" data-width="370" data-height="50" data-longtitle="true" data-lang="pt-BR"></div>
+    <button onclick="myFunction()">Sign Out</button>
+
+    <script>
+    function myFunction() {
+        gapi.auth2.getAuthInstance().signOut().then(function () {
+        console.log('User signed out.');
+        location.reload();
+        });
+
+    }
+    </script>
  
     <script>
       function onSignIn(response) {
