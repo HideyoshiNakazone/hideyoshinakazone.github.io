@@ -3,7 +3,7 @@
   <h3 align="center">Hideyoshi's Websites</h3>
 
   <p align="center">
-    Simple website hideyoshinakazone.github.iository
+    Simple website repository
     <br />
     <br />   
     <a href="https://hideyoshinakazone.github.io/Curso1">Curso 1</a>
@@ -19,16 +19,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This hideyoshinakazone.github.iository contains the website made during my HTML, CSS and JS studies
+This resitory contains the website made during my HTML, CSS and JS studies
 
-<!-- GETTING STARTED -->
-## Getting Started
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-
 
 <!-- CONTACT -->
 ## Contact
