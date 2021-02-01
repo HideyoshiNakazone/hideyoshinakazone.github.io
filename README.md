@@ -32,10 +32,10 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h3 align="center">project_title</h3>
+  <h3 align="center">Hideyoshi's Websites</h3>
 
   <p align="center">
-    project_description
+    Simple website repository
     <br />
     <a href="https://github.com/HideyoshiNakazone/hideyoshinakazone.github.io"><strong>Explore the docs »</strong></a>
     <br />
@@ -95,7 +95,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Vitor Hideyoshi - [@twitter_handle](https://twitter.com/NakazoneVitor) - vitor.h.n.batista@gmail.com
+Vitor Hideyoshi - [@NakazoneVitor](https://twitter.com/NakazoneVitor) - vitor.h.n.batista@gmail.com
 
 Project Link: [https://github.com/HideyoshiNakazone/hideyoshinakazone.github.io](https://github.com/HideyoshiNakazone/hideyoshinakazone.github.io)
 
