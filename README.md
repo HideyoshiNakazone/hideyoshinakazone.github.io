@@ -1,6 +1,6 @@
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
+*** that would make this better, please fork the hideyoshinakazone.github.io and create a pull request
 *** or simply open an issue with the tag "enhancement".
 *** Thanks again! Now go create something AMAZING! :D
 ***
@@ -35,53 +35,23 @@
   <h3 align="center">Hideyoshi's Websites</h3>
 
   <p align="center">
-    Simple website repository
+    Simple website hideyoshinakazone.github.iository
     <br />
-    <a href="https://github.com/HideyoshiNakazone/hideyoshinakazone.github.io"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
+    <br />   
     <a href="https://github.com/HideyoshiNakazone/hideyoshinakazone.github.io">View Demo</a>
     ·
-    <a href="https://github.com/HideyoshiNakazone/hideyoshinakazone.github.io/issues">Report Bug</a>
+    <a href="https://github.com/HideyoshiNakazone/hideyoshinakazone.github.io/issues">hideyoshinakazone.github.iort Bug</a>
+    ·
+    <a href="https://github.com/HideyoshiNakazone/hideyoshinakazone.github.io/issues">Request Feature</a>
     ·
     <a href="https://github.com/HideyoshiNakazone/hideyoshinakazone.github.io/issues">Request Feature</a>
   </p>
 </p>
 
-
-
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
-</details>
-
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This repository contains the website made during my HTML, CSS and JS studies
+This hideyoshinakazone.github.iository contains the website made during my HTML, CSS and JS studies
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -101,15 +71,15 @@ Project Link: [https://github.com/HideyoshiNakazone/hideyoshinakazone.github.io]
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/HideyoshiNakazone/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/HideyoshiNakazone/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/HideyoshiNakazone/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/HideyoshiNakazone/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/HideyoshiNakazone/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/HideyoshiNakazone/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/HideyoshiNakazone/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/HideyoshiNakazone/repo/issues
-[license-shield]: https://img.shields.io/github/license/HideyoshiNakazone/repo.svg?style=for-the-badge
-[license-url]: https://github.com/HideyoshiNakazone/repo/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/HideyoshiNakazone/hideyoshinakazone.github.io.svg?style=for-the-badge
+[contributors-url]: https://github.com/HideyoshiNakazone/hideyoshinakazone.github.io/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/HideyoshiNakazone/hideyoshinakazone.github.io.svg?style=for-the-badge
+[forks-url]: https://github.com/HideyoshiNakazone/hideyoshinakazone.github.io/network/members
+[stars-shield]: https://img.shields.io/github/stars/HideyoshiNakazone/hideyoshinakazone.github.io.svg?style=for-the-badge
+[stars-url]: https://github.com/HideyoshiNakazone/hideyoshinakazone.github.io/stargazers
+[issues-shield]: https://img.shields.io/github/issues/HideyoshiNakazone/hideyoshinakazone.github.io.svg?style=for-the-badge
+[issues-url]: https://github.com/HideyoshiNakazone/hideyoshinakazone.github.io/issues
+[license-shield]: https://img.shields.io/github/license/HideyoshiNakazone/hideyoshinakazone.github.io.svg?style=for-the-badge
+[license-url]: https://github.com/HideyoshiNakazone/hideyoshinakazone.github.io/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/vitor-hideyoshi-nakazone-batista-6547991ba
