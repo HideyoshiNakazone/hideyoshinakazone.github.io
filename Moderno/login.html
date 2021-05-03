@@ -49,26 +49,28 @@
                 </form>
             </div>
 
-            <div class="google">
+            <div class="separator"></div>
+
+            <div class="social">
 
                 <div class="g-signin2" data-onsuccess="onSignIn" 
                 data-scope="https://www.googleapis.com/auth/plus.login" data-accesstype="offline"
                 data-redirecturi="https://hideyoshinakazone.github.io/Moderno"
-                data-theme="dark" data-width="360" data-height="50"
+                data-theme="dark" data-width="auto" data-height="50"
                 data-longtitle="true" data-lang="pt-BR">
                 </div>
             
-                <button onclick="myFunction()">Sign Out</button>
+                <!-- <button class='logout' onclick="Logoutfuncion()">Sign Out</button>
 
                 <script>
-                function myFunction() {
+                function LogoutFunction() {
                     gapi.auth2.getAuthInstance().signOut().then(function () {
                     console.log('User signed out.');
                     location.reload();
                     });
 
                 }
-                </script>
+                </script> -->
                 
             </div>
         

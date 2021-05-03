@@ -15,25 +15,30 @@ body{
 }
 
 .container{
-    width: 90%;
-    height: 450px;
-    display: grid;
-    grid-template-columns: 2fr;
+    width: 95%;
+	max-width: 880px;
+    height: auto;
+    display: flex;
     background-color: #ffffff;
     border-radius: 8px;
-    grid-gap :0rem;
-    padding: 0 3rem;
+	place-items: center;
 }
 
 .login-content{
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 420px;
+	width: 380px;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 }
 
 form{
-	width: 360px;
+	width: 320px;
 }
 
 .login-content img{
@@ -136,8 +141,30 @@ form{
 	font-family: 'poppins', sans-serif;
 }
 
-.input-div.pass{
+.input-div.pass {
 	margin-bottom: 4px;
+}
+
+
+.separator {
+	width: 1px;
+	height: 380px;
+	border-left: 2px solid rgba(131, 131, 131, 0.267);
+}
+
+.social {
+	margin: auto;
+	height: auto;
+	width: 380px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+
+.g-signin2 .g-signin2 .abcRioButton {
 }
 
 a{
@@ -170,11 +197,50 @@ button a {
     font-size: 16px;
 }
 
-@media (min-width: 900px){
+
+@media only screen and (max-width: 412px){
+
 	.container{
-		grid-template-columns: repeat(2, 1fr);
-		width: 90%;
+		width: 90%;display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
     }
+
+	.login-content {
+		margin: 20px 0;
+		width: auto;
+	}
+
+	.container form {
+		width: auto;
+	}
+
+	.separator {
+		width: 80%;
+		height: 1px;
+		margin: 20px 0;
+		border-left: 0;
+		border-top: 2px solid rgba(131, 131, 131, 0.267);
+	}
+
+	.social {
+		margin-top: 20px;
+		margin-bottom: 60px;
+		height: 50px;
+		width: 380px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	
+	}
+
+	.g-signin2 .g-signin2 .abcRioButton {
+		max-width: 80%;
+	}
 
     .img{
         display: flex;
@@ -190,11 +256,41 @@ button a {
 	}
 }
 
-@media (min-width: 1050px){
+@media only screen and (max-width: 768px){
+
 	.container{
-		grid-template-columns: repeat(2, 1fr);
-		width: 900px;
+		width: 90%;
+		flex-direction: column;
     }
+
+	.login-content {
+		margin: 20px 0;
+	}
+
+	.separator {
+		width: 80%;
+		height: 1px;
+		margin: 20px 0;
+		border-left: 0;
+		border-top: 2px solid rgba(131, 131, 131, 0.267);
+	}
+
+	.social {
+		margin-top: 20px;
+		margin-bottom: 60px;
+		height: 50px;
+		width: 380px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	
+	}
+
+	.g-signin2 .g-signin2 .abcRioButton {
+		max-width: 80%;
+	}
 
     .img{
         display: flex;
@@ -238,11 +334,4 @@ button a {
   margin: 0 auto;
   text-align: center;
   color: #0066AA;
-}
-
-.g-signin2,
-.g-signin2 .abcRioButton {
-  display: block;
-  margin: 20px auto 0 auto;
-  text-align: center;
 }
