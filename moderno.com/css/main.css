@@ -43,12 +43,12 @@ h1, h2, h3, h4 {
     }
     .nav-links button {
         border: none;
-        padding: 10px 27px;
+        width: 140px;
+        height: 40px;
         margin: 4px 2px;
         cursor: pointer;
         border-radius: 8px;
         background-color: #f44336;
-        width: fit-content;
         position: relative;
         z-index: 0;
     }
@@ -82,6 +82,11 @@ h1, h2, h3, h4 {
         text-decoration: none;
         letter-spacing: 3px;
         font-size: 14px;
+    }
+    .user-nav {
+        display: flex;
+        flex-direction: column;
+        place-items: center;
     }
     .logo {
         float: left;
@@ -148,9 +153,18 @@ h1, h2, h3, h4 {
             transform: translateX(0px);
         }
     }
+    .register button {
+        display: none;
+    }
     .login button {
         display: none;
     }
+
+
+.user {
+    display:inline-flex;
+    width: 240px;
+}
 
 
 .presentation {
@@ -320,6 +334,32 @@ h1, h2, h3, h4 {
         all: initial;
         all: unset;
     }
+    .register {
+        margin: auto;
+    }    
+    .register button {
+        all: initial;
+        all: unset;
+        border: none;
+        padding: 10px 27px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+        background-color: #f44336;
+        width: fit-content;
+        position: relative;
+        z-index: 0;
+    }
+    .register button a {
+        all: initial;
+        all: unset;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 16px;
+    }
+    .login {
+        margin: auto;
+    }
     .login button {
         all: initial;
         all: unset;
@@ -362,6 +402,26 @@ h1, h2, h3, h4 {
     .intro {
         all: initial;
         all: unset;
+    }
+    .register button {
+        all: initial;
+        all: unset;
+        border: none;
+        padding: 10px 27px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+        background-color: #f44336;
+        width: fit-content;
+        position: relative;
+        z-index: 0;
+    }
+    .register button a {
+        all: initial;
+        all: unset;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 16px;
     }
     .login button {
         all: initial;
