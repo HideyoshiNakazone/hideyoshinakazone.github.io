@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
         <title>New Order - Hideyoshi - Creative Simple Portfolio Page</title>
         <link rel="icon" href="./img/logohideyoshi-red.png">
