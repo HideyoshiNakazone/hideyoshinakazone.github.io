@@ -4,8 +4,8 @@
         <title>Hideyoshi - Creative Simple Portfolio Page</title>
         <link rel="icon" href="img/logohideyoshi-red.png">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="css/grid.css" />
-        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/src/grid.css" />
+        <link rel="stylesheet" type="text/css" href="css/src/normalize.css" />
         <link rel="stylesheet" type="text/css" href="css/login.css" />
         <meta name="google-signin-scope" content="profile email">
         <meta name="google-signin-client_id" content="862936948821-qb8ed21v73anjg9oke7iu2cc4vmeabmf.apps.googleusercontent.com">
@@ -23,7 +23,7 @@
     <body>
 	    <div class="container">
             <div class="login-content">
-                <form action="index.html">
+                <form action="index.php">
                     <img src="img/undraw_profile_pic_ic5t.png">
                     <h2 class="title">Welcome</h2>
                     <div class="input-div one">

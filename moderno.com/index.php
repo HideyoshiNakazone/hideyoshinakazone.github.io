@@ -1,12 +1,19 @@
+<?php
+    include('src/session.php');
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
         <title>Hideyoshi - Creative Simple Portfolio Page</title>
         <link rel="icon" href="img/logohideyoshi-red.png">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="css/grid.css" />
-        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/src/grid.css" />
+        <link rel="stylesheet" type="text/css" href="css/src/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/src/header.css" />
+        <link rel="stylesheet" type="text/css" href="css/src/footer.css" />
+        <link rel="stylesheet" type="text/css" href="css/src/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/59950f6906.js" crossorigin="anonymous"></script>
@@ -20,40 +27,14 @@
     </head>
     <body>
         <div class="wrapper">
-            <div class="header">
-                <div class="principal">
-                    <div class="logo">
-                        <a href=""><img src="./img/logohideyoshi-white.png" alt=""></a>
-                    </div>
-                    <ul class="nav-links">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./index.html">Work</a></li>
-                        <li><a href="./contact.php">Contact</a></li>
-                        <li><a href="./index.html">About</a></li>
-                        <div class="user-nav">
-                            <button type="button"><a href="./signup.html">Register</a></button>
-                            <button type="button"><a href="./login.html">Login</a></button>
-                        </div>
-                    </ul>
-                    <div class="user">
-                        <div class="register">
-                            <button type="button"><a href="./signup.html">Register</a></button>
-                        </div>
-                        <div class="login">
-                            <button type="button"><a href="./login.html">Login</a></button>
-                        </div>
-                    </div>
-                    <div class="menu">
-                        <div class="burger">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php
+                include('./src/base/header.php')
+            ?>
             <div class="presentation">
                 <div class="center">
                     <h1>MODERNO</h1>
                     <div class="intro">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda veniam odio, quos nobis error suscipit nemo nulla, laudantium ipsa itaque iusto! Veritatis cupiditate, aliquid ipsa consequatur reprehenderit et necessitatibus aliquam!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id tempor augue, non consequat magna. Donec non massa libero. Maecenas imperdiet tristique augue sed ultrices. Sed malesuada massa id enim bibendum efficitur. Nullam non aliquam sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec molestie nec massa vel tristique.</p>
                     </div>
                     <div class="btm">
                         <button type="button"><a href="./contact.html">Get in Touch</a></button>
@@ -63,7 +44,12 @@
             <div class="stories">
                 <div class="center">
                     <h2>Success Stories</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure adipisci voluptates odit ab labore eos aspernatur, amet earum, deleniti tempore debitis porro omnis minima nobis et. Quae porro architecto odio.</p>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure adipisci voluptates odit ab labore eos aspernatur, amet earum, deleniti tempore debitis porro omnis minima nobis et. Quae porro architecto odio.
+                        <br>
+                        Nulla et turpis magna. Pellentesque consequat tellus in laoreet euismod. In molestie arcu justo, ut semper quam venenatis sit amet. Phasellus a feugiat nisl, at volutpat magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet ultricies enim. Nam viverra consectetur ante. Nullam et nunc lobortis, scelerisque erat vitae, aliquet quam. Fusce sagittis placerat suscipit. Donec dapibus tortor vel nibh aliquet sodales a id quam. Suspendisse potenti. Nunc pulvinar varius dolor nec vulputate.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure adipisci voluptates odit ab labore eos aspernatur, amet earum, deleniti tempore debitis porro omnis minima nobis et. Quae porro architecto odio.
+                    </p>
+                
                 </div>
             </div>
             <div class="services">
@@ -97,12 +83,9 @@
                     </div>
                 </div>
             </div>
-            <div class="footer">
-                <div class="license">
-                    <span>&copy; 2020 - Hideyoshi Desenvolvimento Web</span>
-                </div>
-            </div>
+            <?php
+                include('./src/base/footer.php')
+            ?>
         </div>
-        <script src="./js/main.js"></script>
     </body>
 </html>

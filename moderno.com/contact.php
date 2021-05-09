@@ -1,5 +1,5 @@
 <?php
-    include('./php/functions.php')
+    include('src/session.php');
 ?>
 
 <!DOCTYPE html>
@@ -8,9 +8,12 @@
         <title>New Order - Hideyoshi - Creative Simple Portfolio Page</title>
         <link rel="icon" href="./img/logohideyoshi-red.png">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="css/grid.css" />
-        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-        <link rel="stylesheet" type="text/css" href="css/order.css" />
+        <link rel="stylesheet" type="text/css" href="css/src/grid.css" />
+        <link rel="stylesheet" type="text/css" href="css/src/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/src/header.css" />
+        <link rel="stylesheet" type="text/css" href="css/src/footer.css" />
+        <link rel="stylesheet" type="text/css" href="css/src/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/contact.css" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/59950f6906.js" crossorigin="anonymous"></script>
@@ -24,27 +27,9 @@
     </head>
     <body>
         <div class="wrapper">
-            <div class="header">
-                <div class="principal">
-                    <div class="logo">
-                        <a href=""><img src="./img/logohideyoshi-white.png" alt=""></a>
-                    </div>
-                    <ul class="nav-links">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./index.html">Work</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                        <li><a href="./index.html">About</a></li>
-                        <button type="button"><a href="./login.html">Login</a></button>
-                    </ul>
-                    <div class="login">
-                        <button type="button"><a href="./login.html">Login</a></button>
-                    </div>
-                    <div class="menu">
-                        <div class="burger">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php
+                include('./src/base/header.php');
+            ?>
             <div class="contact">
                 <div class="center">
                     <h1>MODERNO</h1>
@@ -94,11 +79,9 @@
                     <p>Message received</p>";} ?></p>
                 </div>
             </div>
-            <div class="footer">
-                <div class="license">
-                    <span>&copy; 2020 - Hideyoshi Desenvolvimento Web</span>
-                </div>
-            </div>
+            <?php
+                include('./src/base/footer.php')
+            ?>
         </div>
         <script src="./js/main.js"></script>
     </body>
