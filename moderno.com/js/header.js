@@ -64,23 +64,23 @@ mnBtn.addEventListener('click', () => {
             link.style.animation = `navUnfade 0.5s ease forwards ${index / 7 + 0.5}s`
         }
     });
-
-});
-
-profileBtn.addEventListener('click', () => {
-    //Open User menu
-
-        profileBtn.classList.add('open');
-        navUser.classList.remove('nav-deactive')
-        navUser.classList.add('nav-active')
-        userOpen = true;
-
-    //Animate Links
-    userSpaces.forEach((space, index) => {
-        if(!profileBtn) {
-            space.style.animation = `navFade 0.5s ease forwards ${index / 7 + 0.5}s`;
-        } else {
-            space.style.animation = `navUnfade 0.5s ease forwards ${index / 7 + 0.5}s`
-        }
+    
+    profileBtn.addEventListener('click', () => {
+        //Open User menu
+    
+            profileBtn.classList.add('open');
+            navUser.classList.remove('nav-deactive')
+            navUser.classList.add('nav-active')
+            userOpen = true;
+    
+        //Animate Links
+        userSpaces.forEach((space, index) => {
+            if(!profileBtn) {
+                space.style.animation = `navFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+            } else {
+                space.style.animation = `navUnfade 0.5s ease forwards ${index / 7 + 0.5}s`
+            }
+        });
     });
+
 });
