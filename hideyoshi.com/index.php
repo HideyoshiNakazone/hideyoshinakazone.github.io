@@ -89,14 +89,15 @@
         </div>
         <script>
             if ('serviceWorker' in navigator) {
-                console.log('CLIENT: service worker registration in progress.');
-                navigator.serviceWorker.register('/service-worker.js').then(function() {
-                console.log('CLIENT: service worker registration complete.');
-            }, function() {
-                console.log('CLIENT: service worker registration failure.');
+                window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js').then(function(registration) {
+                // Registration was successful
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                // registration failed :(
+                console.log('ServiceWorker registration failed: ', err);
+                });
             });
-            } else {
-                console.log('CLIENT: service worker is not supported.');
             }
         </script>
         <script src="/sw.js"></script>
