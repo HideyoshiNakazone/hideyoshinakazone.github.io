@@ -16,14 +16,27 @@
             </div>
         </div>
         <div class="nav-user">
-            <ul class="link-container">
-                <li><i class="icon-box far fa-user"></i><a href="#">My Profile</a></li>
-                <li><i class="icon-box far fa-edit"></i><a href="#">Edit Profile</a></li>
-                <li><i class="icon-box fas fa-inbox"></i><a href="#">Inbox</a></li>
-                <li><i class="icon-box fas fa-cogs"></i><a href="#">Settings</a></li>
-                <li><i class="icon-box fas fa-question-circle"></i><a href="#">Help</a></li>
-                <li><i class="icon-box fas fa-sign-out-alt"></i><a href="/logout.php">Logout</a></li>
-            </ul>
+            <?php
+            if(isset($_SESSION['user_id'])) {
+                echo '
+                    <ul class="link-container">
+                        <li><i class="icon-box far fa-user"></i><a href="#">My Profile</a></li>
+                        <li><i class="icon-box far fa-edit"></i><a href="#">Edit Profile</a></li>
+                        <li><i class="icon-box fas fa-inbox"></i><a href="#">Inbox</a></li>
+                        <li><i class="icon-box fas fa-cogs"></i><a href="#">Settings</a></li>
+                        <li><i class="icon-box fas fa-question-circle"></i><a href="#">Help</a></li>
+                        <li><i class="icon-box fas fa-sign-out-alt"></i><a href="/logout.php">Logout</a></li>
+                    </ul>';
+            } else {
+                echo '
+                    <ul class="link-container user-setup">
+                        <li><i class="icon-box fas fa-sign-in-alt"></i><a href="/login.php">Login</a></li>
+                        <li><i class="icon-box fas fa-user-plus"></i><a href="/signup.php">Sign Up</a></li>
+                    </ul>
+                ';
+            }
+            
+            ?>
         </div>
         <div class="user">
             <div class="profile">
@@ -31,33 +44,28 @@
             </div>
             <div class="user-menu">
                 <h3>John Dow</h3>
-                <ul>
-                    <li>
-                        <i class="icon-box far fa-user"></i><a href="#">My Profile</a>
-                    </li>
-                    <li>
-                    <i class="icon-box far fa-edit"></i><a href="#">Edit Profile</a>
-                    </li>
-                    <li>
-                        <i class="icon-box fas fa-inbox"></i><a href="#">Inbox</a>
-                    </li>
-                    <li>
-                        <i class="icon-box fas fa-cogs"></i><a href="#">Settings</a>
-                    </li>
-                    <li>
-                        <i class="icon-box fas fa-question-circle"></i><a href="#">Help</a>
-                    </li>
-                    <li>
-                    <i class="icon-box fas fa-sign-out-alt"></i><a href="/logout.php">Logout</a>
-                    </li>
-                </ul>
+                <?php
+                    if(isset($_SESSION['user_id'])) {
+                        echo '
+                            <ul class="logged-in">
+                                <li><i class="icon-box far fa-user"></i><a href="#">My Profile</a></li>
+                                <li><i class="icon-box far fa-edit"></i><a href="#">Edit Profile</a></li>
+                                <li><i class="icon-box fas fa-inbox"></i><a href="#">Inbox</a></li>
+                                <li><i class="icon-box fas fa-cogs"></i><a href="#">Settings</a></li>
+                                <li><i class="icon-box fas fa-question-circle"></i><a href="#">Help</a></li>
+                                <li><i class="icon-box fas fa-sign-out-alt"></i><a href="/logout.php">Logout</a></li>
+                            </ul>
+                        ';
+                    } else {
+                        echo '
+                            <ul class="logged-out">
+                                <li><i class="fas fa-sign-in-alt"></i><a href="/login.php">Login</a></li>
+                                <li><i class="fas fa-user-plus"></i><a href="/signup.php">Sign Up</a></li>
+                            </ul>
+                        ';
+                    }
+                ?>
             </div>
-            <!-- <div class="register">
-                <button type="button"><a href="./signup.html">Register</a></button>
-            </div>
-            <div class="login">
-                <button type="button"><a href="./login.html">Login</a></button>
-            </div> -->
         </div>
         <div class="menu">
             <div class="burger">
