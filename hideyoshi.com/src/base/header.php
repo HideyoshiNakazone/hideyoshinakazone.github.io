@@ -6,10 +6,10 @@
         <div class="separator"></div>
         <div class="nav-links">
             <ul class="link-container">
-                <li><a href="./index.php">Home</a></li>
-                <li><a href="./index.html">Work</a></li>
-                <li><a href="./contact.php">Contact</a></li>
-                <li><a href="./index.html">About</a></li>
+                <li><a href="/index.php">Home</a></li>
+                <li><a href="/index.html">Work</a></li>
+                <li><a href="/contact.php">Contact</a></li>
+                <li><a href="/index.html">About</a></li>
             </ul>
             <div class="profile">
                 <i class="fas fa-user"></i>
@@ -22,7 +22,7 @@
                 <li><i class="icon-box fas fa-inbox"></i><a href="#">Inbox</a></li>
                 <li><i class="icon-box fas fa-cogs"></i><a href="#">Settings</a></li>
                 <li><i class="icon-box fas fa-question-circle"></i><a href="#">Help</a></li>
-                <li><i class="icon-box fas fa-sign-out-alt"></i><a href="#">Logout</a></li>
+                <li><i class="icon-box fas fa-sign-out-alt"></i><a href="/logout.php">Logout</a></li>
             </ul>
         </div>
         <div class="user">
@@ -48,7 +48,7 @@
                         <i class="icon-box fas fa-question-circle"></i><a href="#">Help</a>
                     </li>
                     <li>
-                    <i class="icon-box fas fa-sign-out-alt"></i><a href="#">Logout</a>
+                    <i class="icon-box fas fa-sign-out-alt"></i><a href="/logout.php">Logout</a>
                     </li>
                 </ul>
             </div>

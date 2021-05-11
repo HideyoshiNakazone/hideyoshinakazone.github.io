@@ -74,6 +74,15 @@ mnBtn.addEventListener('click', () => {
         }
     });
 
+    const rows = Links.length
+    console.log(`We have ${rows} rows`)
+
+    if(!menuOpen) {
+        profileBtn.style.animation = `navFade 0.5s ease forwards ${ (rows+1) / 7 + 0.5}s`;
+    } else {
+        profileBtn.style.animation = `navUnfade 0.5s ease forwards ${ (rows+1) / 7 + 0.5}s`
+    } 
+
 });
 
 profileBtn.addEventListener('click', () => {
